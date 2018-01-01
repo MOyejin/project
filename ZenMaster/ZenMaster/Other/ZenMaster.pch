@@ -1,0 +1,27 @@
+//
+//  ZenMaster.pch
+//  ZenMaster
+//
+//  Created by mo on 2017/12/27.
+//  Copyright © 2017年 momo. All rights reserved.
+//
+
+#ifndef ZenMaster_pch
+#define ZenMaster_pch
+
+#import <MJExtension.h>
+#import "MBProgressHUD+XY.h"
+#import <MJRefresh.h>
+#import <UIImageView+WebCache.h>
+#import "UserModel.h"
+#import "MOHTTP.h"
+#import <SDAutoLayout.h>
+
+
+#define IOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0 ? YES : NO)
+#define StatusBarHeight (IOS7==YES ? 0 : 20)
+
+#define MOScreenW   [UIScreen mainScreen].bounds.size.width
+#define MOScreenH  [UIScreen mainScreen].bounds.size.height-StatusBarHeight
+
+#endif /* ZenMaster_pch */
